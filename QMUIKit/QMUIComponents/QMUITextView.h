@@ -68,28 +68,28 @@
  *
  *  默认为YES（注意系统的 UITextView 对这种行为默认是 NO）
  */
-@property(nonatomic, assign) IBInspectable BOOL shouldResponseToProgrammaticallyTextChanges;
+@property(nonatomic, assign)  BOOL shouldResponseToProgrammaticallyTextChanges;
 
 /**
  *  显示允许输入的最大文字长度，默认为 NSUIntegerMax，也即不限制长度。
  */
-@property(nonatomic, assign) IBInspectable NSUInteger maximumTextLength;
+@property(nonatomic, assign)  NSUInteger maximumTextLength;
 
 /**
  *  在使用 maximumTextLength 功能的时候，是否应该把文字长度按照 [NSString (QMUI) qmui_lengthWhenCountingNonASCIICharacterAsTwo] 的方法来计算。
  *  默认为 NO。
  */
-@property(nonatomic, assign) IBInspectable BOOL shouldCountingNonASCIICharacterAsTwo;
+@property(nonatomic, assign)  BOOL shouldCountingNonASCIICharacterAsTwo;
 
 /**
  *   placeholder 的文字
  */
-@property(nonatomic, copy) IBInspectable NSString *placeholder;
+@property(nonatomic, copy)  NSString *placeholder;
 
 /**
  *  placeholder 文字的颜色
  */
-@property(nonatomic, strong) IBInspectable UIColor *placeholderColor;
+@property(nonatomic, strong)  UIColor *placeholderColor;
 
 /**
  *  placeholder 在默认位置上的偏移（默认位置会自动根据 textContainerInset、contentInset 来调整）

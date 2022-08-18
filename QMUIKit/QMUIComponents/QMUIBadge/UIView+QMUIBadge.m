@@ -126,6 +126,8 @@ static char kAssociatedObjectKey_badgeString;
             self.qmui_badgeLabel.backgroundColor = self.qmui_badgeBackgroundColor;
             self.qmui_badgeLabel.textColor = self.qmui_badgeTextColor;
             self.qmui_badgeLabel.font = self.qmui_badgeFont;
+            self.qmui_badgeLabel.layer.borderColor = [[UIColor whiteColor] CGColor];
+            self.qmui_badgeLabel.layer.borderWidth = 1.0;
             self.qmui_badgeLabel.contentEdgeInsets = self.qmui_badgeContentEdgeInsets;
             self.qmui_badgeLabel.offset = self.qmui_badgeOffset;
             self.qmui_badgeLabel.offsetLandscape = self.qmui_badgeOffsetLandscape;

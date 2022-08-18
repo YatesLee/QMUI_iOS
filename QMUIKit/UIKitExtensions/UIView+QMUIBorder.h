@@ -46,7 +46,7 @@ typedef NS_ENUM(NSUInteger, QMUIViewBorderLocation) {
 @property(nonatomic, assign) QMUIViewBorderPosition qmui_borderPosition;
 
 /// 边框的大小，默认为PixelOne。请注意修改 qmui_borderPosition 的值以将边框显示出来。
-@property(nonatomic, assign) IBInspectable CGFloat qmui_borderWidth;
+@property(nonatomic, assign)  CGFloat qmui_borderWidth;
 
 /**
  边框的偏移，默认为 UIEdgeInsetsZero，当某个方向的值为正值，则边框会往内缩，负值则边框会往外拓。但对于不同的边框线，borderInsets 的 top/left/bottom/right 会对应不同的方向，具体如下：
@@ -55,10 +55,10 @@ typedef NS_ENUM(NSUInteger, QMUIViewBorderLocation) {
  3. 对于 QMUIViewBorderPositionBottom 而言，边框从右下往左下绘制。所以 left 正值则边框的右下端点往左缩（左端点不变），right 正值则边框的左下端点往右缩（右端点不变）。top 正值则边框往上偏移，bottom 正值则边框往下偏移。
  4. 对于 QMUIViewBorderPositionRight 而言，边框从上往下绘制。所以 left 正值则边框的顶端点往下缩（底端点不变），right 正值则边框的底端点往上缩（顶端点不变）。top 正值则边框往左偏移，bottom 正值则边框往右偏移。
  */
-@property(nonatomic, assign) IBInspectable UIEdgeInsets qmui_borderInsets;
+@property(nonatomic, assign)  UIEdgeInsets qmui_borderInsets;
 
 /// 边框的颜色，默认为UIColorSeparator。请注意修改 qmui_borderPosition 的值以将边框显示出来。
-@property(nullable, nonatomic, strong) IBInspectable UIColor *qmui_borderColor;
+@property(nullable, nonatomic, strong)  UIColor *qmui_borderColor;
 
 /// 虚线 : dashPhase默认是0，且当dashPattern设置了才有效
 /// qmui_dashPhase 表示虚线起始的偏移，qmui_dashPattern 可以传一个数组，表示“lineWidth，lineSpacing，lineWidth，lineSpacing...”的顺序，至少传 2 个。

@@ -35,32 +35,32 @@ typedef NS_ENUM(NSUInteger, QMUIPieProgressViewShape) {
 /**
  进度动画的时长，默认为 0.5
  */
-@property(nonatomic, assign) IBInspectable CFTimeInterval progressAnimationDuration;
+@property(nonatomic, assign)  CFTimeInterval progressAnimationDuration;
 
 /**
  当前进度值，默认为 0.0。调用 `setProgress:` 相当于调用 `setProgress:animated:NO`
  */
-@property(nonatomic, assign) IBInspectable float progress;
+@property(nonatomic, assign)  float progress;
 
 /**
  外边框的大小，默认为 1。
  */
-@property(nonatomic, assign) IBInspectable CGFloat borderWidth;
+@property(nonatomic, assign)  CGFloat borderWidth;
 
 /**
  外边框与内部扇形之间的间隙，默认为 0。
  */
-@property(nonatomic, assign) IBInspectable CGFloat borderInset;
+@property(nonatomic, assign)  CGFloat borderInset;
 
 /**
  线宽，用于环形绘制，默认为 0。
  */
-@property(nonatomic, assign) IBInspectable CGFloat lineWidth;
+@property(nonatomic, assign)  CGFloat lineWidth;
 
 /**
  绘制形状，默认是扇形。
  */
-@property(nonatomic, assign) IBInspectable QMUIPieProgressViewShape shape;
+@property(nonatomic, assign)  QMUIPieProgressViewShape shape;
 
 /**
  修改当前的进度，会触发 UIControlEventValueChanged 事件

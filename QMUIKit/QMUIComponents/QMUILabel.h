@@ -32,10 +32,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 是否需要长按复制的功能，默认为 NO。
 /// 长按时的背景色通过`highlightedBackgroundColor`设置。
-@property(nonatomic,assign) IBInspectable BOOL canPerformCopyAction;
+@property(nonatomic,assign)  BOOL canPerformCopyAction;
 
 /// 当 canPerformCopyAction 开启时，长按出来的菜单上的复制按钮的文本，默认为 nil，nil 时 menuItem 上的文字为“复制”
-@property(nonatomic, copy, nullable) IBInspectable NSString *menuItemTitleForCopyAction;
+@property(nonatomic, copy, nullable)  NSString *menuItemTitleForCopyAction;
 
 /**
  label 在 highlighted 时的背景色，通常用于两种场景：
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  默认为 nil
 */
-@property(nonatomic,strong, nullable) IBInspectable UIColor *highlightedBackgroundColor UI_APPEARANCE_SELECTOR;
+@property(nonatomic,strong, nullable)  UIColor *highlightedBackgroundColor UI_APPEARANCE_SELECTOR;
 
 /// 点击了“复制”后的回调
 @property(nonatomic, copy, nullable) void (^didCopyBlock)(QMUILabel *label, NSString *stringCopied);

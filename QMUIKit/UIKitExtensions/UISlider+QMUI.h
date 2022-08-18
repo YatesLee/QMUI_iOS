@@ -24,24 +24,24 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nullable, nonatomic, strong, readonly) UIView *qmui_thumbView;
 
 /// 背后导轨的高度，默认为 0，表示使用系统默认的高度。
-@property(nonatomic, assign) IBInspectable CGFloat qmui_trackHeight UI_APPEARANCE_SELECTOR;
+@property(nonatomic, assign)  CGFloat qmui_trackHeight UI_APPEARANCE_SELECTOR;
 
 /// 中间圆球的大小，默认为 CGSizeZero
 /// @warning 注意若设置了 thumbSize 但没设置 thumbColor，则圆点的颜色会使用 self.tintColor 的颜色（而系统 UISlider 默认的圆点颜色是白色带阴影，不跟 tintColor 走）
-@property(nonatomic, assign) IBInspectable CGSize qmui_thumbSize UI_APPEARANCE_SELECTOR;
+@property(nonatomic, assign)  CGSize qmui_thumbSize UI_APPEARANCE_SELECTOR;
 
 /// 中间圆球的颜色，仅当设置了 qmui_thumbSize 时才有效。默认为 nil，nil 表示用 self.tintColor。
 /// @warning 注意在使用了 qmui_thumbSize 时请勿使用系统的 thumbTintColor，后者会导致 qmui_thumbSize 无效。
-@property(nullable, nonatomic, strong) IBInspectable UIColor *qmui_thumbColor UI_APPEARANCE_SELECTOR;
+@property(nullable, nonatomic, strong)  UIColor *qmui_thumbColor UI_APPEARANCE_SELECTOR;
 
 /// 中间圆球的阴影颜色，默认为 nil
-@property(nullable, nonatomic, strong) IBInspectable UIColor *qmui_thumbShadowColor UI_APPEARANCE_SELECTOR;
+@property(nullable, nonatomic, strong)  UIColor *qmui_thumbShadowColor UI_APPEARANCE_SELECTOR;
 
 /// 中间圆球的阴影偏移值，默认为 CGSizeZero
-@property(nonatomic, assign) IBInspectable CGSize qmui_thumbShadowOffset UI_APPEARANCE_SELECTOR;
+@property(nonatomic, assign)  CGSize qmui_thumbShadowOffset UI_APPEARANCE_SELECTOR;
 
 /// 中间圆球的阴影扩散度，默认为 0
-@property(nonatomic, assign) IBInspectable CGFloat qmui_thumbShadowRadius UI_APPEARANCE_SELECTOR;
+@property(nonatomic, assign)  CGFloat qmui_thumbShadowRadius UI_APPEARANCE_SELECTOR;
 
 /// 用于实现只有若干个离散数值的 slider 交互，该属性可控制圆点停靠的位置数量，默认为0，当设置为大于等于2的值时才启用该交互模式。
 @property(nonatomic, assign) NSUInteger qmui_numberOfSteps;

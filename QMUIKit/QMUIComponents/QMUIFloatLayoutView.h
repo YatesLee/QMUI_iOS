@@ -33,12 +33,12 @@ extern const CGSize QMUIFloatLayoutViewAutomaticalMaximumItemSize;
 /**
  *  item 的最小宽高，默认为 CGSizeZero，也即不限制。
  */
-@property(nonatomic, assign) IBInspectable CGSize minimumItemSize;
+@property(nonatomic, assign)  CGSize minimumItemSize;
 
 /**
  *  item 的最大宽高，默认为 QMUIFloatLayoutViewAutomaticalMaximumItemSize，也即不超过 floatLayoutView 自身最大内容宽高。
  */
-@property(nonatomic, assign) IBInspectable CGSize maximumItemSize;
+@property(nonatomic, assign)  CGSize maximumItemSize;
 
 /**
  *  item 之间的间距，默认为 UIEdgeInsetsZero。

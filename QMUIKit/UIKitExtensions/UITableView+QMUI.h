@@ -146,7 +146,7 @@ extern const UITableViewStyle QMUITableViewStyleInsetGrouped;
  最低版本包含 iOS 12 及以下，则需要在 Interface Builder 里把 qmui_style 修改为“2”来使用 QMUITableViewStyleInsetGrouped（选中 TableView 节点后在“User Defined Runtime Attributes”里添加名为“qmui_style”，类型为“Number”，值为“2”的条目）。
  */
 #if TARGET_INTERFACE_BUILDER
-@property(nonatomic, assign, readwrite) IBInspectable UITableViewStyle qmui_style;
+@property(nonatomic, assign, readwrite)  UITableViewStyle qmui_style;
 #else
 @property(nonatomic, assign, readonly) UITableViewStyle qmui_style;
 #endif
